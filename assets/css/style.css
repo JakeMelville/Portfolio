@@ -1,0 +1,154 @@
+body {
+    background-color: grey;
+}
+
+header {
+    background-image: linear-gradient(grey, black);
+    line-height: 10px;
+}
+
+/* #welcome-image {
+    opacity: 0.95;
+} */
+
+h1 {
+font-size: 30px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: right;
+background-color: none;
+color: black;
+padding-right: 50px;
+}
+
+nav {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    line-height: 40px;
+}
+#other {
+    visibility: hidden;
+}
+
+nav li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 18px;
+}
+main {
+    text-decoration: none;
+}
+h2 {
+    text-align: center;
+    padding-top: 3%;
+    font-size: 20px;
+    color: grey;
+}
+
+.middle {
+    background-image: linear-gradient(black, grey);
+}
+
+.middle .about-me {
+    color:grey;
+    text-decoration: none;
+    border-color: grey;
+    border-width: 20%;
+    
+}
+
+.middle .about-me p {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+#profpic {
+    display: block;
+    float: left;
+    padding: 10px;
+}
+h3 {
+    text-align: left;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+aside {
+    width: 20%;
+    float: left;
+    display: flexbox;
+    padding-left: 10px;
+}
+aside p {
+    font-size: 16px;
+}
+.projects {
+    padding: 5px;
+    display: flexbox;
+    margin: 20px;
+    width: 250px;
+}
+.projects header {
+    width: 222px;
+    background-color: none;
+    background-image: none;
+    font-size: 10px;
+    display: inline-flexbox;
+}
+
+.my-work {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projects header a:visited {
+    text-decoration: none;
+    color: white;
+}
+.projects a:link {
+    text-decoration: none;
+    color: white;
+}
+#contact-me {
+    color: #fff;
+    text-decoration: none;
+    
+}
+.connect ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+#resume {
+    color: #fff;
+}
+.social {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.social a:visited {
+    text-decoration: none;
+    color: black;
+}
+.social a:link {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    color: beige;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: grey;
+    font-style: italic;
+}
