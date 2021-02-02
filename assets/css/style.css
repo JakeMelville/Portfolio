@@ -1,10 +1,14 @@
 body {
-    background-color: grey;
+    background-color: rgb(3, 32, 59);
+    color: rgba(3, 32, 59, 0.507);
+
 }
 
 header {
-    background-image: linear-gradient(grey, black);
-    line-height: 10px;
+    background: rgb(3, 32, 59);
+    background: linear-gradient(180deg, rgb(3, 32, 59) 0%, rgb(255, 255, 255) 75%);
+    color: rgba(3, 32, 59, 0.507);
+    height: 50px;
 }
 
 /* #welcome-image {
@@ -12,16 +16,16 @@ header {
 } */
 
 h1 {
-font-size: 30px;
+font-size: 20px;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 text-align: right;
-background-color: none;
-color: black;
-padding-right: 50px;
+color: rgb(255, 255, 255);
+padding-right: 25px;
+padding-top: 15px;
 }
 
 nav {
-    color: #fff;
+    color: rgba(3, 32, 59, 0.507);
 }
 
 nav ul {
@@ -30,33 +34,37 @@ nav ul {
     text-align: left;
     justify-content: space-evenly;
     line-height: 40px;
+    color: rgba(3, 32, 59, 0.507)
 }
 #other {
     visibility: hidden;
 }
 
 nav li a {
-    color: whitesmoke;
+    color: rgb(128, 128, 128);
     text-decoration: none;
     font-style: italic;
     font-size: 18px;
+    text-emphasis: bold;
 }
 main {
     text-decoration: none;
+    background-color: rgb(255, 255, 255);
 }
 h2 {
     text-align: center;
     padding-top: 3%;
     font-size: 20px;
-    color: grey;
+    color: rgb(0, 0, 0);
 }
 
 .middle {
-    background-image: linear-gradient(black, grey);
+    background: rgba(255, 255, 255);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(3, 32, 59) 75%);
 }
 
 .middle .about-me {
-    color:grey;
+    color:rgb(0, 0, 0);
     text-decoration: none;
     border-color: grey;
     border-width: 20%;
@@ -77,7 +85,7 @@ h3 {
     text-align: left;
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 aside {
     width: 20%;
@@ -89,7 +97,7 @@ aside p {
     font-size: 16px;
 }
 .projects {
-    padding: 5px;
+    /* padding: 5px; */
     display: flexbox;
     margin: 20px;
     width: 250px;
@@ -100,10 +108,11 @@ aside p {
     background-image: none;
     font-size: 10px;
     display: inline-flexbox;
+    height: 10px;
 }
 
 .my-work {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
@@ -111,11 +120,11 @@ aside p {
 }
 .projects header a:visited {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .projects a:link {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 #contact-me {
     color: #fff;
@@ -133,22 +142,22 @@ aside p {
     color: #fff;
 }
 .social {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
 }
 .social a:visited {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .social a:link {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 footer {
-    color: beige;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-bottom: 30px;
-    background-color: grey;
+    background-color: rgb(3, 32, 59);
     font-style: italic;
 }
