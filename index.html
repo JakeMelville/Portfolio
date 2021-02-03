@@ -10,19 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<!-- <br>
-<br> -->
-
 <body>
     <h1>Jake Melville</h1>
     <header>
         <br>
         <nav>
-            <ul>
+            <ul> 
+                <!-- linked each tab to section on webpage where they are located -->
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#my-work">Work</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <!-- couldnt figure out the spacing.. added "other" tab and then set visibility to hidden. -->
                 <li id="other">Other</li>
             </ul>
         </nav>
@@ -31,6 +30,7 @@
         <div>
             <img id="welcome-image" src="assets/images/Coding Wallpapers 4.jpg" width="100%" height="100%">
         </div>
+        <!-- middle of my webpage where most of my info is stored. Seperated into 3 sections -->
         <div class="middle">
             <section id="about-me" class="about-me">
                 <img id="profpic" src="assets/images/profile.jpeg" width="200 px" height="200 px">
@@ -51,11 +51,13 @@
             <br>
             <br>
             <section id="my-work" class="my-work">
+                <!-- created an aside to store brief paragraph about projects in a column on the left side of webpage. -->
                 <aside id="work-explanation">
                     <h3>My Work</h3>
                     <br>
                     <p> A few past and current projects are shown here on the right. On top of each image, a link is provided that will bring the user to a page where you can see more information regarding each project. The Cat & Mouse game was made through Scratch, while my Code Refactor, and future projects were made through Visual Code Studio. All projects were made using HTML, CSS, and JavaScript.</p>
                 </aside>
+                <!-- added hyperlinks w/ _target to open links in new tab -->
                 <div class="projects">
                     <header><a href="https://scratch.mit.edu/projects/477694488/editor" target="_blank">Click here to check out my Cat and Mouse Game!</a></header>
                     <img src="assets/images/catmouse.png" width=222px height=222px />
@@ -75,9 +77,9 @@
             <br>
             <br>
             <section id="contact-me" class="contact-me">
-                <!-- <h2>Contact Me</h2> -->
                 <div class="connect">
                     <ul>
+                        <!-- added links to all these platforms and added icons next to them.  -->
                         <li class="social"><a href="https://github.com/JakeMelville" target="_blank"><i
                                     class="fa">&#xf09b;</i>GitHub</a></li>
                         <li class="social"><a href="https://www.linkedin.com/in/jake-melville/" target="_blank"><i

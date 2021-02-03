@@ -1,6 +1,7 @@
 body {
     background-color: rgb(3, 32, 59);
     color: rgba(3, 32, 59, 0.507);
+    box-sizing: border-box;
 
 }
 
@@ -11,9 +12,6 @@ header {
     height: 50px;
 }
 
-/* #welcome-image {
-    opacity: 0.95;
-} */
 
 h1 {
 font-size: 20px;
@@ -98,7 +96,6 @@ aside p {
 }
 .projects {
     /* padding: 5px; */
-    display: flexbox;
     margin: 20px;
     width: 250px;
 }
@@ -160,4 +157,14 @@ footer {
     padding-bottom: 30px;
     background-color: rgb(3, 32, 59);
     font-style: italic;
+}
+@media screen and (max-width: 561px) {
+    
+.middle {
+    flex-direction: row;
+}    
+aside {
+    flex-direction: column;
+    order: 1;
+    }
 }
