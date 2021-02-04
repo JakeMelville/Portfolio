@@ -1,18 +1,7 @@
 body {
     background-color: rgb(3, 32, 59);
-    color: rgba(3, 32, 59, 0.507);
     box-sizing: border-box;
-
 }
-
-header {
-    background: rgb(3, 32, 59);
-    background: linear-gradient(180deg, rgb(3, 32, 59) 0%, rgb(255, 255, 255) 75%);
-    color: rgba(3, 32, 59, 0.507);
-    height: 50px;
-}
-
-
 h1 {
 font-size: 20px;
 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -21,66 +10,62 @@ color: rgb(255, 255, 255);
 padding-right: 25px;
 padding-top: 15px;
 }
-
-nav {
-    color: rgba(3, 32, 59, 0.507);
-}
-
+header {
+    background: linear-gradient(180deg, rgb(3, 32, 59) 0%, rgb(255, 255, 255) 75%);
+    height: 50px;
+}    
+/* centered the navbar menues, and allowed for them to be responsive w flex */
 nav ul {
     display: flex;
-    text-align: left;
     justify-content: space-evenly;
     line-height: 40px;
     color: rgba(3, 32, 59, 0.507);
     margin: 20px 0 0 0;
 }
-#other {
-    visibility: hidden;
-}
-
 nav li a {
     color: rgb(68, 68, 68);
     text-decoration: none;
     font-style: italic;
     font-size: 18px;
-    text-emphasis: bold;
 }
 main {
     text-decoration: none;
     background-color: rgb(255, 255, 255);
+}
+/* set all of the elements in .middle to flex and wrap so the elements are spaced out even. Also when the page size changes the layout stays clean */
+.middle {
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(3, 32, 59) 75%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-me {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    border-color: grey;  
+}
+/* want the picture top left */
+#profpic {
+    display: block;
+    float: left;
+    padding: 10px;
 }
 h2 {
     text-align: center;
     padding-top: 3%;
     font-size: 20px;
     color: rgb(0, 0, 0);
-    margin: 0 0 10px 115px;
+    margin: 0 0 10px 0;
 }
-
-.middle {
-    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(3, 32, 59) 75%);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.about-me {
-    color:rgb(0, 0, 0);
-    text-decoration: none;
-    border-color: grey;
-    border-width: 20%;
-    
-}
-
 .about-me p {
-    display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
 }
-#profpic {
-    display: block;
-    float: left;
-    padding: 10px;
+.my-work {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 h3 {
     text-align: center;
@@ -95,6 +80,7 @@ aside {
     display: flex;
     padding-left: 10px;
 }
+/* accessing p tag in aside */
 aside p {
     font-size: 16px;
 }
@@ -114,19 +100,12 @@ aside p {
     font-size: 10px;
     height: 10px;
 }
-
-.my-work {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-}
+/* after the link is clicked it will stay black instead of changing to purple */
 .project-links:visited {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+/* link starts black instead of blue */
 .project-links:link {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -137,7 +116,6 @@ aside p {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    
 }
 .connect {
     display: flex;
@@ -145,15 +123,11 @@ aside p {
     line-height: 40px;
     width: 100%;
 }
-#resume {
-    color: #fff;
-}
 .social {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
-    margin: 0 10px;
-    
+    margin: 0 10px;  
 }
 .social a:visited {
     text-decoration: none;
@@ -171,9 +145,24 @@ footer {
     font-style: italic;
     margin: 40px 0 40px 0;
 }
+/* added this so that when the screen is smaller than 610px the below code executes. */
 @media screen and (max-width: 610px) {
     
 .middle {
     flex-direction: column;
-    color: white;
 }    
+#about-me p {
+    display: inline-block;
+    text-align: left;
+}
+h2 {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+}
+#profpic {
+    display:inline-block;
+    margin: auto;
+    text-align: center;
+}
+}
